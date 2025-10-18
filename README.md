@@ -18,23 +18,14 @@ It aims to evaluate and compare model performances in terms of accuracy and gene
 The dataset used is the Forest Cover Type Dataset
 , which contains cartographic variables from the Roosevelt National Forest in northern Colorado.
 
-Features:
+Features:-
 
-10 continuous features (e.g., Elevation, Aspect, Slope, etc.)
+- 10 continuous features (e.g., Elevation, Aspect, Slope, etc.)
+- 44 binary features representing soil types and wilderness areas
+- Target: Cover_Type (7 forest cover types, represented as integers 1–7)
 
-44 binary features representing soil types and wilderness areas
+Objective :- Predict the forest cover type (e.g., Spruce/Fir, Lodgepole Pine, Aspen, etc.) based on environmental data.
 
-Target: Cover_Type (7 forest cover types, represented as integers 1–7)
-
-Objective:
-
-Predict the forest cover type (e.g., Spruce/Fir, Lodgepole Pine, Aspen, etc.) from environmental data.
-
-## 🧠 Models Implemented
-Model	Type	Description
-Decision Tree	Single tree	Simple interpretable model using Gini impurity
-Random Forest	Ensemble	Combines multiple trees to reduce overfitting
-XGBoost	Gradient boosting	Advanced boosting algorithm optimizing classification
 🔑 Steps in the Notebook
 
 Data Loading & Cleaning
