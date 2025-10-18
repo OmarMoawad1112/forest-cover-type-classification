@@ -1,11 +1,10 @@
-🌲 Forest Cover Type Classification Using Machine Learning
+# 🌲 Forest Cover Type Classification Using Machine Learning
 
-
-
-
-
-
-
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-yellow.svg)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Clustering-orange.svg)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-green.svg)
+![Seaborn](https://img.shields.io/badge/Seaborn-EDA-blue.svg)
 
 
 
