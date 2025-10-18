@@ -8,12 +8,12 @@
 
 
 
-📌 Project Overview
+## 📌 Project Overview
 
 This project focuses on supervised learning to predict the forest cover type from cartographic variables using different machine learning algorithms — Decision Tree, Random Forest, and XGBoost.
 It aims to evaluate and compare model performances in terms of accuracy and generalization.
 
-📂 Dataset
+## 📂 Dataset
 
 The dataset used is the Forest Cover Type Dataset
 , which contains cartographic variables from the Roosevelt National Forest in northern Colorado.
@@ -30,7 +30,7 @@ Objective:
 
 Predict the forest cover type (e.g., Spruce/Fir, Lodgepole Pine, Aspen, etc.) from environmental data.
 
-🧠 Models Implemented
+## 🧠 Models Implemented
 Model	Type	Description
 Decision Tree	Single tree	Simple interpretable model using Gini impurity
 Random Forest	Ensemble	Combines multiple trees to reduce overfitting
@@ -49,7 +49,7 @@ Performance Evaluation & Comparison
 
 Model Saving & Loading for Deployment
 
-⚙️ Technical Details
+## ⚙️ Technical Details
 
 Programming Language: Python
 
@@ -59,7 +59,7 @@ Scaling: Continuous features scaled with StandardScaler
 
 Evaluation Metric: Accuracy
 
-📊 Results & Comparison
+## 📊 Results & Comparison
 Model	Training Accuracy	Validation Accuracy	Test Accuracy
 Decision Tree	0.9839	0.9294	—
 Random Forest	0.9990	0.9479	—
@@ -88,7 +88,7 @@ These results demonstrate the effectiveness of gradient boosting for structured 
 
 Ensemble methods like Random Forest and XGBoost significantly outperform single decision trees in both stability and accuracy.
 
-▶️ How to Run the Project
+## ▶️ How to Run the Project
 1. Prerequisites
 
 Python 3.8+
