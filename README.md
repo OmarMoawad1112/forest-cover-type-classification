@@ -15,7 +15,7 @@ It aims to evaluate and compare model performances in terms of accuracy and gene
 
 ## 📂 Dataset
 
-The dataset used is the Forest Cover Type Dataset
+The dataset used is the [Forest Cover Type Dataset](https://www.kaggle.com/datasets/uciml/forest-cover-type-dataset) Dataset
 , which contains cartographic variables from the Roosevelt National Forest in northern Colorado.
 
 Features:-
