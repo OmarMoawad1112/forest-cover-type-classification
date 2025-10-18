@@ -19,26 +19,12 @@ The dataset used is the [Forest Cover Type Dataset](https://www.kaggle.com/datas
 , which contains cartographic variables from the Roosevelt National Forest in northern Colorado.
 
 Features:-
-
 - 10 continuous features (e.g., Elevation, Aspect, Slope, etc.)
 - 44 binary features representing soil types and wilderness areas
 - Target: Cover_Type (7 forest cover types, represented as integers 1–7)
 
-Objective :- Predict the forest cover type (e.g., Spruce/Fir, Lodgepole Pine, Aspen, etc.) based on environmental data.
-
-🔑 Steps in the Notebook
-
-Data Loading & Cleaning
-
-Feature Scaling (StandardScaler)
-
-Train / Validation / Test Split (70/15/15)
-
-Model Training (Decision Tree, Random Forest, XGBoost)
-
-Performance Evaluation & Comparison
-
-Model Saving & Loading for Deployment
+Objective :-
+- Predict the forest cover type (e.g., Spruce/Fir, Lodgepole Pine, Aspen, etc.) based on environmental data.
 
 ## ⚙️ Technical Details
 
