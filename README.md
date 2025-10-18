@@ -18,98 +18,76 @@ It aims to evaluate and compare model performances in terms of accuracy and gene
 The dataset used is the [Forest Cover Type Dataset](https://www.kaggle.com/datasets/uciml/forest-cover-type-dataset) Dataset
 , which contains cartographic variables from the Roosevelt National Forest in northern Colorado.
 
-Features:-
-- 10 continuous features (e.g., Elevation, Aspect, Slope, etc.)
-- 44 binary features representing soil types and wilderness areas
-- Target: Cover_Type (7 forest cover types, represented as integers 1–7)
+- Features:-
+  - 10 continuous features (e.g., Elevation, Aspect, Slope, etc.)
+  - 44 binary features representing soil types and wilderness areas
+  - Target: Cover_Type (7 forest cover types, represented as integers 1–7)
 
-Objective :-
-- Predict the forest cover type (e.g., Spruce/Fir, Lodgepole Pine, Aspen, etc.) based on environmental data.
+- Objective :-
+  - Predict the forest cover type (e.g., Spruce/Fir, Lodgepole Pine, Aspen, etc.) based on environmental data.
 
-## ⚙️ Technical Details
-
-Programming Language: Python
-
-Libraries: pandas, numpy, scikit-learn, xgboost, matplotlib, seaborn
-
-Scaling: Continuous features scaled with StandardScaler
-
-Evaluation Metric: Accuracy
 
 ## 📊 Results & Comparison
-Model	Training Accuracy	Validation Accuracy	Test Accuracy
-Decision Tree	0.9839	0.9294	—
-Random Forest	0.9990	0.9479	—
-XGBoost	1.0000	0.9638	0.9626 ✅
-🧩 Insights
 
-XGBoost achieved the highest test accuracy (96.26%), outperforming both Decision Tree and Random Forest.
+- **Decision Tree**
+  - Training Accuracy: 0.9839  
+  - Validation Accuracy: 0.9294  
 
-The improvement reflects better generalization and reduced overfitting due to boosting and regularization.
+- **Random Forest**
+  - Training Accuracy: 0.9990  
+  - Validation Accuracy: 0.9479  
 
-Random Forest performed well but was slightly behind XGBoost in validation accuracy.
+- **XGBoost ✅**
+  - Training Accuracy: **1.0000**  
+  - Validation Accuracy: **0.9638**  
+  - Test Accuracy: **0.9626**
 
-Decision Tree showed overfitting due to its simplicity and lack of ensemble averaging.
 
-🏁 Conclusion
 
-The XGBoost model provided the best overall performance with:
+## 🧩 Insights
 
-Training Accuracy: 100%
+- XGBoost achieved the highest test accuracy (96.26%), outperforming both Decision Tree and Random Forest.
+- Random Forest performed well but was slightly behind XGBoost in validation accuracy.
 
-Validation Accuracy: 96.38%
 
-Test Accuracy: 96.26%
+## 🏁 Conclusion
 
-These results demonstrate the effectiveness of gradient boosting for structured classification tasks.
+The **XGBoost** model achieved the best overall performance with:
 
-Ensemble methods like Random Forest and XGBoost significantly outperform single decision trees in both stability and accuracy.
+- **Training Accuracy:** 100%  
+- **Validation Accuracy:** 96.38%  
+- **Test Accuracy:** 96.26%
+
+These results highlight the **effectiveness of gradient boosting** for structured classification tasks.  
+Ensemble methods like **Random Forest** and **XGBoost** significantly outperform single decision trees in both **stability** and **accuracy**, making them ideal for real-world predictive modeling.
+
 
 ## ▶️ How to Run the Project
-1. Prerequisites
 
-Python 3.8+
+### 1. Prerequisites
+- Python 3.8+  
+- Git  
+- Recommended: virtual environment to manage dependencies  
 
-Git
+### 2. Clone the Repository
+```bash
+git clone https://github.com/OmarMoawad1112/forest-cover-type-classification.git
+cd forest-cover-type-classification
+```
 
-Recommended: virtual environment
-
-2. Clone the Repository
-git clone https://github.com/OmarMoawad1112/forest-cover-type-classification-xgboost.git
-cd forest-cover-type-classification-xgboost
-
-3. Create and Activate a Virtual Environment
+### 3. Create and Activate a Virtual Environment
+```bash
 python -m venv venv
-venv\Scripts\activate    # Windows
-source venv/bin/activate # Mac/Linux
+venv\Scripts\activate (Windows)
+source venv/bin/activate (Mac/Linux)
+```
 
-4. Install Dependencies
+### 4. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-5. Run the Project
-python src/main.py
-
-6. View Results
-
-Console displays model accuracy scores
-
-Visualizations and reports show model performance comparisons
-
-📁 Repository Structure
-forest-cover-type-classification-xgboost/
-│
-├── data/
-│   └── covtype.csv
-│
-├── model/
-│   └── xgb_best_model.json
-│
-├── src/
-│   └── main.py
-│
-├── requirements.txt
-└── README.md
-
-🧾 License
-
-This project is open-source and available under the MIT License.
+### 5. Run the Project
+```bash
+python main.py
+```
